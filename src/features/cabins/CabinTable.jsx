@@ -35,7 +35,6 @@ const CabinTable = () => {
   });
 
   console.log(cabins);
-
   if (isLoading) return <Spinner />;
 
   return (

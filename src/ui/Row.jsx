@@ -1,7 +1,8 @@
 import styled, { css } from "styled-components";
 
 const Row = styled.div`
-  display: flex;
+  /* display: flex; */
+
   ${(props) =>
     props.type === "horizontal" &&
     css`
@@ -16,5 +17,9 @@ const Row = styled.div`
       gap: 1.6rem;
     `}
 `;
+
+Row.defaultProps = {
+  type: "vertical",
+};
 
 export default Row;
